@@ -104,7 +104,7 @@ class VRButton{
         //
 
         button.style.display = '';
-        button.style.right = '60px';
+        button.style.right = '20px';
         button.style.width = '80px';
         button.style.cursor = 'pointer';
         button.innerHTML = '<i class="fas fa-vr-cardboard"></i>';
@@ -112,7 +112,7 @@ class VRButton{
 
         button.onmouseenter = function () {
             
-            button.style.fontSize = '12px'; 
+            button.style.fontSize = '10px'; 
             button.textContent = (currentSession===null) ? 'Welcome to VR Showroom' : 'EXIT VR';
             button.style.opacity = '1.0';
 
