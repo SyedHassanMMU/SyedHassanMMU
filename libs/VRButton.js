@@ -93,7 +93,7 @@ class VRButton{
             currentSession.removeEventListener( 'end', onSessionEnded );
 
             self.stylizeElement( button, true, 12, true );
-            button.textContent = 'Welcome to VR Showroom';
+            button.textContent = 'Welcome to VR';
 
             currentSession = null;
             
@@ -113,7 +113,7 @@ class VRButton{
         button.onmouseenter = function () {
             
             button.style.fontSize = '12px'; 
-            button.textContent = (currentSession===null) ? 'Welcome to VR Showroom' : 'EXIT VR';
+            button.textContent = (currentSession===null) ? 'Welcome to VR' : 'EXIT VR';
             button.style.opacity = '1.0';
 
         };
@@ -179,7 +179,7 @@ class VRButton{
 
     }
 
-    stylizeElement( element, active = true, fontSize = 10, ignorePadding = false ) {
+    stylizeElement( element, active = true, fontSize = 13, ignorePadding = false ) {
 
         element.style.position = 'absolute';
         element.style.bottom = '20px';
