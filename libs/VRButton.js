@@ -112,7 +112,7 @@ class VRButton{
 
         button.onmouseenter = function () {
             
-            button.style.fontSize = '6px'; 
+            button.style.fontSize = '12px'; 
             button.textContent = (currentSession===null) ? 'Welcome to VR Showroom' : 'EXIT VR';
             button.style.opacity = '1.0';
 
@@ -179,7 +179,7 @@ class VRButton{
 
     }
 
-    stylizeElement( element, active = true, fontSize = 13, ignorePadding = false ) {
+    stylizeElement( element, active = true, fontSize = 10, ignorePadding = false ) {
 
         element.style.position = 'absolute';
         element.style.bottom = '20px';
